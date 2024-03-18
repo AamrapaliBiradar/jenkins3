@@ -23,12 +23,14 @@ public class OrgnizationsTest {
 		String USERNAME = putil.getDataFromPropertyFile("Username");
 		String PASSWORD = putil.getDataFromPropertyFile("Password");
 
+		
 		driver.get(URL);
 		// To maximize the window
 		wutil.maximize(driver);
 		// To apply wait for findElement()
 		wutil.implicitwait(driver);
 
+		
 		// Login to application
 		driver.findElement(By.name("user_name")).sendKeys(USERNAME);
 		driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
